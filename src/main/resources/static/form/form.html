@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Villes</title>
+	<link rel="stylesheet" type="text/css" href="view.css" media="all">
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="view.js"></script>
+		<script type="text/javascript" src="mycode.js"></script>
+</head>
+<body id="main_body">
+	<img id="top" src="top.png" alt="">
+		<div id="form_container">
+			<h1>
+				<a>Villes</a>
+			</h1>
+			<form id="citiesForm" class="appnitro">
+				<div class="form_description">
+					<h2>Villes</h2>
+					<p>Saisie des villes</p>
+				</div>
+				<ul>
+					<li id="li_1"><label class="description" for="cityName">Nom </label>
+						<div>
+							<input id="cityName" name="name" class="element text medium" type="text" maxlength="255" value="" />
+						</div>
+						<p class="guidelines" id="guide_1">
+							<small>Nom de la ville</small>
+						</p></li>
+					<li id="li_2"><label class="description" for="cityLatitude">Latitude </label>
+						<div>
+							<input id="cityLatitude" name="latitude" class="element text medium" type="text" maxlength="255" value="" />
+						</div>
+						<p class="guidelines" id="guide_2">
+							<small>Saisissez la lattitude</small>
+						</p></li>
+					<li id="li_3"><label class="description" for="cityLongitude">Longitude </label>
+						<div>
+							<input id="cityLongitude" name="longitude" class="element text medium" type="text" maxlength="255" value="" />
+						</div>
+						<p class="guidelines" id="guide_3">
+							<small>Saisissez la longitude</small>
+						</p></li>
+					<li class="buttons"><input id="saveForm" class="button_text" type="button" name="submit"
+						value="Créer la ville" onClick="SaveCity();"
+					/></li>
+				</ul>
+			</form>
+			<div id="footer"></div>
+		</div> <img id="bottom" src="bottom.png" alt="">
+</body>
+</html>
